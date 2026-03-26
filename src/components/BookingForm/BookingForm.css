@@ -95,3 +95,50 @@
     transform: translateX(0);
   }
 }
+
+.success-modal {
+  text-align: center;
+  background-color: var(--bg-card, #2b2b2b);
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.check-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-green, #1ed760);
+  color: #121212;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.success-details {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #d9d9d9;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.success-details strong {
+  color: var(--primary-green, #1ed760);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
