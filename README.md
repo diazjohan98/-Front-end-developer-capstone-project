@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 🍋 Little Lemon Restaurant - Table Reservation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es la aplicación de reservas de mesas para el restaurante ficticio **Little Lemon**, desarrollado como proyecto final (Capstone) para la **Meta Front-End Developer Specialization**.
 
-## Available Scripts
+El proyecto demuestra la construcción de una Single Page Application (SPA) interactiva utilizando React, enfocándose en la experiencia de usuario (UX), el manejo de estados complejos y las pruebas unitarias.
 
-In the project directory, you can run:
+## ✨ Características Principales
 
-### `npm start`
+- **Diseño de Interfaz Personalizado:** Implementación de un diseño UI/UX propio creado en Figma, utilizando un esquema de colores en modo oscuro con acentos verdes para mejorar el contraste y la accesibilidad.
+- **Flujo de Reserva de Múltiples Pasos:** Experiencia de usuario fluida sin recargas de página, guiando al usuario desde la selección de fecha/hora hasta la confirmación visual de éxito.
+- **Gestión de Estado Compleja:** Uso avanzado de `useReducer` y `useEffect` en React para manejar la disponibilidad dinámica de los horarios de reserva basados en la fecha seleccionada.
+- **Validación de Formularios Nativa:** Implementación de validaciones HTML5 para garantizar la integridad de los datos del cliente antes de enviar la reserva.
+- **Integración de Mock API:** Simulación de llamadas a una base de datos externa para obtener horas disponibles y procesar la confirmación de la reserva.
+- **Pruebas Unitarias (Unit Testing):** Entorno de pruebas configurado con Jest y React Testing Library para asegurar el correcto renderizado de componentes y la lógica del estado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js:** Librería principal para la construcción de la interfaz (Hooks, Props, State, Componentes modulares).
+- **CSS3:** Estilos puros modulares con CSS Grid, Flexbox y Variables nativas para el diseño responsivo y animaciones fluidas.
+- **HTML5:** Marcado semántico y validaciones de formulario.
+- **Jest & React Testing Library:** Para la validación de la lógica del Reducer y el renderizado del DOM.
 
-### `npm test`
+## 🚀 Instalación y Uso
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sigue estos pasos para correr el proyecto localmente en tu máquina:
 
-### `npm run build`
+1. **Clona el repositorio:**
+   ```bash
+   git clone <tu-enlace-de-github-aqui>
+   Navega al directorio del proyecto:
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bash
+cd capstone-project
+Instala las dependencias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bash
+npm install
+Inicia el servidor de desarrollo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bash
+npm start
+La aplicación se abrirá automáticamente en http://localhost:3000.
 
-### `npm run eject`
+🧪 Ejecución de Pruebas (Tests)
+Para verificar que la lógica del Reducer y la renderización de los componentes funcionan correctamente según los requisitos del proyecto, ejecuta:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bash
+npm test
+(Presiona la tecla a en la terminal para correr todas las pruebas).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👨‍💻 Autor
+Johan Vasquez Front-end Developer & Systems Engineer
