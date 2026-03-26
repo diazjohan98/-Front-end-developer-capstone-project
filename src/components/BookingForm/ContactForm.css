@@ -1,0 +1,44 @@
+contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px; /* Mismo ancho que el calendario para mantener la proporción */
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.input-group label {
+  color: var(--text-light, #ffffff);
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  background-color: #d9d9d9; /* El gris claro de tu Figma */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados sutiles */
+  padding: 12px 15px;
+  font-size: 1rem;
+  color: #121212; /* Texto oscuro adentro del input */
+  outline: none;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* 🟢 Efecto focus: Cuando el usuario hace clic para escribir, se ilumina verde */
+.input-group input:focus {
+  box-shadow: 0 0 0 2px var(--primary-green, #1ed760);
+  transform: translateY(-2px);
+}
+
+/* 🟢 Estilo para cuando hay un error de validación HTML5 al intentar enviar */
+.input-group input:invalid:not(:focus):not(:placeholder-shown) {
+  box-shadow: 0 0 0 2px #ff4d4d; /* Borde rojo si el correo está mal escrito */
+}
