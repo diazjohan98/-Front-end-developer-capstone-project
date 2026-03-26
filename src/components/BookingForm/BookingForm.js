@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import GuestCounter from "./GuestCounter";
 import TimePicker from "./TimePicker";
+import DatePicker from "./DatePicker";
 
 const BookingForm = () => {
+  const [date, setDate] = useState(new Date());
+
   const [guests, setGuests] = useState(2);
 
   const [selectedTime, setSelectedTime] = useState("");
@@ -18,6 +21,8 @@ const BookingForm = () => {
         paddingTop: "40px",
       }}
     >
+      <DatePicker date={date} setDate={setDate} />
+
       <TimePicker
         availableTimes={availableTimes}
         selectedTime={selectedTime}
