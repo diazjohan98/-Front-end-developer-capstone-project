@@ -1,11 +1,9 @@
-import React, { useReducer } from "react";
-import BookingForm from "./BookingForm/BookingForm";
+import React from "react";
+import BookingForm from "./BookingForm/BookingForm"; // 🟢 Ruta actualizada
 
 const Main = () => {
-  // Aquí pondremos la lógica de useReducer para las horas más tarde
   return (
-    <main>
-      <h1>Reserve a Table</h1>
+    <main style={{ minHeight: "100vh", backgroundColor: "var(--bg-dark)" }}>
       <BookingForm />
     </main>
   );
